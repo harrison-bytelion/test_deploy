@@ -1,7 +1,7 @@
 # Rails API Template
 
 [![Gem](https://img.shields.io/gem/v/rails?label=rails)](https://rubygems.org/gems/rails)
-[![Badge](https://img.shields.io/badge/ruby-2.5.1-blue)](https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-5-1-released/)
+[![Badge](https://img.shields.io/badge/ruby-v2.5.1-blue)](https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-5-1-released/)
 
 This template is built to start a barebones rails API.
 The following gems are already integrated into the project.
