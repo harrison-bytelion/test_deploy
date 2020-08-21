@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get '/rails/mailers' => "rails/mailers#index"
   get '/rails/mailers/*path' => "rails/mailers#preview"
 
+  devise_for :users
+
   scope module: :v1, constraints: ApiVersion.new('v1', true) do
     namespace :auth do
       mount_devise_token_auth_for 'User',
