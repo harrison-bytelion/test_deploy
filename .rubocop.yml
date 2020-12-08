@@ -1,0 +1,42 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - bin/**/*
+    - tmp/**/*
+    - vendor/**/*
+    - log/**/*
+    - db/**/*
+    - config/**/*
+    - Gemfile.lock
+    - yarn.lock
+    - node_modules/**/*
+
+# Metrics
+Metrics/BlockLength:
+  IgnoredMethods: ['ActiveAdmin.register', 'resource']
+Metrics/MethodLength:
+  IgnoredMethods: ['configure_permitted_parameters']
+  Max: 25
+Metrics/AbcSize:
+  Max: 20
+Metrics/ClassLength:
+  Max: 200
+  
+# Layouts
+Layout/LineLength:
+  Exclude:
+    - 'spec/**/*'
+
+# Style
+Style/Documentation:
+    Enabled: false
+
+# Rspec
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/ExampleLength:
+  Enabled: false
